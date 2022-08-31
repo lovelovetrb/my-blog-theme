@@ -1,0 +1,22 @@
+.breadcrumb{
+    background-color: rgba(95, 108, 123,0.35);
+}
+
+.breadcrumb ol{
+    margin: 0 auto;
+    max-width: 85%;
+    display: flex;
+}
+
+.breadcrumb li::after{
+    content: '>';
+    padding: 0 10px;
+}
+
+.breadcrumb li:first-child{
+    /* padding-left: 3rem; */
+}
+
+.breadcrumb li:last-child::after{
+    content: '';
+}

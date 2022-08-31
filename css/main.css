@@ -1,0 +1,89 @@
+/* card */
+
+.tag{
+    font-family: 'Silkscreen', cursive;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: rgba(80, 80, 80, 0.5);
+    transform: rotate(-4deg);
+}
+
+.card{
+    display: flex;
+    margin: 1rem  3rem;
+    height: calc(65vw/3/100*68);
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 2rem;
+}
+
+.article-img{
+    height: calc(65vw/3/100*54);
+    width: calc(65vw/3/100*96);
+}
+
+.text{
+    width: 65%;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+}
+
+.article_title{
+    text-align: center;
+    /* 溢れたタイトルを...表示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis; /* Safari */
+	-o-text-overflow: ellipsis; /* Opera */
+}
+
+.article_text{
+    padding: 1em;
+    line-height: 2.5em;
+    height: 9em;
+    /* 溢れたタイトルを...表示 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+}
+
+/* side card */
+.side-card{
+    margin: 1rem auto;
+    height: 30vh;
+    width: 17vw;
+    background-color: #fffffe;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.icon{
+    border-radius: calc(25vw/3);
+    width: calc(25vw/3);
+    height: calc(25vw/3);
+    margin: 20px;
+}
+
+.name{
+    font-size: 1.5em;
+    font-family: 'Silkscreen', cursive;
+    padding: 10px 0;
+}
+
+.textarea{
+    display: block;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    width: 90%;
+    font-size: 1em;
+    line-height: 1.5rem;
+}
+
+.static{
+    position: fixed;
+    top:35px;
+}
