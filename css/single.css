@@ -1,11 +1,14 @@
 .breadcrumb{
-    background-color: rgba(95, 108, 123,0.35);
+    background-color: rgba(95, 108, 123,0.8);
+    color: var(--text-color);
+    font-family: 'Silkscreen', cursive;
 }
 
 .breadcrumb ol{
     margin: 0 auto;
     max-width: 85%;
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .breadcrumb li::after{
@@ -13,10 +16,12 @@
     padding: 0 10px;
 }
 
-.breadcrumb li:first-child{
-    /* padding-left: 3rem; */
-}
-
 .breadcrumb li:last-child::after{
     content: '';
+}
+
+.content{
+    border-radius: 20px;
+    background-color: var(--text-color);
+    color: var(--paragrah);
 }

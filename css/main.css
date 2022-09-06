@@ -1,6 +1,8 @@
-/* card */
+/*
+POST CARD
+================================================ */
 
-.tag{
+.card_tag{
     font-family: 'Silkscreen', cursive;
     position: absolute;
     text-align: center;
@@ -24,13 +26,15 @@
     width: calc(65vw/3/100*96);
 }
 
-.text{
+.card_text{
     width: 65%;
     overflow-wrap: break-word;
-    margin: 0 auto;
+    margin: 1.8rem auto;
 }
 
-.article_title{
+.card_article_title{
+    margin: 0 auto;
+    width: 90%;
     text-align: center;
     /* 溢れたタイトルを...表示 */
     overflow: hidden;
@@ -40,50 +44,18 @@
 	-o-text-overflow: ellipsis; /* Opera */
 }
 
-.article_text{
+.card_article_text{
     padding: 1em;
     line-height: 2.5em;
-    height: 9em;
+    letter-spacing: 2px;
+    height: 6em;
+    width: 90%;
+    margin:0 auto;
     /* 溢れたタイトルを...表示 */
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; 
+    -webkit-line-clamp: 2; 
 }
 
-/* side card */
-.side-card{
-    margin: 1rem auto;
-    height: 30vh;
-    width: 17vw;
-    background-color: #fffffe;
-    border-radius: 20px;
-    text-align: center;
-}
 
-.icon{
-    border-radius: calc(25vw/3);
-    width: calc(25vw/3);
-    height: calc(25vw/3);
-    margin: 20px;
-}
-
-.name{
-    font-size: 1.5em;
-    font-family: 'Silkscreen', cursive;
-    padding: 10px 0;
-}
-
-.textarea{
-    display: block;
-    margin: 0 auto;
-    overflow-wrap: break-word;
-    width: 90%;
-    font-size: 1em;
-    line-height: 1.5rem;
-}
-
-.static{
-    position: fixed;
-    top:35px;
-}
