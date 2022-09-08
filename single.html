@@ -16,18 +16,38 @@
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/single.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
+     <!-- shere btn -->
+     <div class="shere-btn">
+        <a class="sns__twitter" href="https://twitter.com/share?url=<?php echo get_the_permalink();?>&text=<?php echo get_the_title();?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a class="sns__facebook" href="http://www.facebook.com/share.php?u=<?php echo get_the_permalink(); ?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="sns__pocket" href="http://getpocket.com/edit?url=<?php echo get_the_permalink();?>&title=<?php echo get_the_title(); ?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-get-pocket"></i>
+        </a>
+        <a class="sns__line" href="https://social-plugins.line.me/lineit/share?url=<?php echo get_the_permalink(); ?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-line"></i>
+        </a>
+        <i class="fa-solid fa-paperclip copy-btn" id="copy-btn" onclick="copyToClipboard()"></i>
+    </div>
+    <!-- go top btn -->
     <div id="gotop" ><a href="#" class="fa-solid fa-angles-up"></a></div>
     <!-- header -->
     <header>
         <div class="title">
-            <h1>RISU NOTE</h1>
+            <h1>
+                <a href="index.html">RISU NOTE</a>
+            </h1>
         </div>
         <nav class="navbar">
             <ul class="navbar-nav">
+                <li><a href="index.html">home</a></li>
                 <li class="nav-item url">profile</li>
                 <li class="nav-item">comtents</li>
                 <li class="nav-item">tags</li>
@@ -45,20 +65,45 @@
         </nav>
     </header>
     <!-- header end -->
-    <div class="breadcrumb">
-        <ol class="">
-            <li class="bread">home</li>
-            <li class="bread">tag</li>
-            <li class="bread">name</li>
-        </ol>
-    </div>
     <!-- content -->
     <div class="container">
         <!-- main -->
         <main>
+            <div class="breadcrumb">
+                <ol class="">
+                    <li class="bread">home</li>
+                    <li class="bread">tag</li>
+                    <li class="bread">name</li>
+                </ol>
+            </div>
             <div class="content">
-                <div class="post_image"></div>
-                <div class="title"></div>
+                <div class="article-title">
+                    <h1>wpのテーマ作ってみた</h1>
+                </div>
+                <div class="article-data">
+                    <ul>
+                        <li>投稿日:2022/9/3</li>
+                        <li>更新日:2022/9/7</li>
+                    </ul>
+                </div>
+                <div class="post-img">
+                    <p class="post-img-tag tag"><a href="tags.html">#tech</a></p>
+                    <img src="src/NO IMAGE.jpg" alt="post_image">
+                </div>
+                <div class="table-of-content">
+                    <h3>目次</h3>
+                    <ul>
+                        <li>1.はじめに</li>
+                        <li>2.動機</li>
+                        <li>3.内容</li>
+                        <li>4.まとめ</li>
+                        <li>5.おわりに</li>
+                    </ul>
+                </div>
+                <div class="article-text">
+                    <h2 class="headline">ワードプレスのテーマ作成</h2>
+                    <p class="sentence">ワードプレステーマを自作してみました！結構色々大変でした！これからも頑張っていきたいと思います！みんなもよかったら作ってみてね！</p>
+                </div>
             </div>
         </main>
         <!-- sidebar -->
@@ -114,7 +159,7 @@
         </div>
     </footer>
     <!-- footer end -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JS File -->
+    <script src="js/index.js"></script>
 </body>
 </html>

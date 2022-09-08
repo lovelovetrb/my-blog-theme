@@ -20,14 +20,34 @@
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
+    <!-- shere btn -->
+    <div class="shere-btn">
+        <a class="sns__twitter" href="https://twitter.com/share?url=<?php echo get_the_permalink();?>&text=<?php echo get_the_title();?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a class="sns__facebook" href="http://www.facebook.com/share.php?u=<?php echo get_the_permalink(); ?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="sns__pocket" href="http://getpocket.com/edit?url=<?php echo get_the_permalink();?>&title=<?php echo get_the_title(); ?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-get-pocket"></i>
+        </a>
+        <a class="sns__line" href="https://social-plugins.line.me/lineit/share?url=<?php echo get_the_permalink(); ?>" target="_blank" rel="nofollow noopener">
+            <i class="fab fa-line"></i>
+        </a>
+        <i class="fa-solid fa-paperclip copy-btn" id="copy-btn" onclick="copyToClipboard()"></i>
+    </div>
+    <!-- go top btn -->
     <div id="gotop" ><a href="#" class="fa-solid fa-angles-up"></a></div>
     <!-- header -->
     <header>
         <div class="title">
-            <h1>RISU NOTE</h1>
+            <h1>
+                <a href="index.html">RISU NOTE</a>
+            </h1>
         </div>
         <nav class="navbar">
             <ul class="navbar-nav">
+                <li><a href="index.html">home</a></li>
                 <li class="nav-item url"><a href="https://lovelovetrb.github.io/" target="_blank" rel="noopener noreferrer">profile</a></li>
                 <li class="nav-item">comtents</li>
                 <li class="nav-item">tags</li>
@@ -49,36 +69,36 @@
     <div class="container">
         <!-- main -->
         <main>
-            <div class="card">
-                <p class="card_tag">#first_post</p>
-                <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
-                <div class="card_text">
-                    <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">みてみて！?これ！可愛くない！！！？？</a></h3>
-                    <p class="card_article_text">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+            <div class="article_list">
+                <div class="card">
+                    <p class="card_tag">#first_post</p>
+                    <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
+                    <div class="card_text">
+                        <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">【決定版！】普通の国立大学に入るための勉強方法３選（理系）</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p class="card_tag"><a href="tags.html">#tech</a></p>
-                <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
-                <div class="card_text">
-                    <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">wpのテーマ作ってみた</a></h3>
-                    <p class="card_article_text">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                <div class="card">
+                    <p class="card_tag"><a href="tags.html">#tech</a></p>
+                    <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
+                    <div class="card_text">
+                        <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">wpのテーマ作ってみた</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p class="card_tag"><a href="tags.html">#tech</a></p>
-                <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
-                <div class="card_text">
-                    <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">情報系の大学入ってみた</a></h3>
-                    <p class="card_article_text">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                <div class="card">
+                    <div class="card-img">
+                        <p class="card_tag"><a href="tags.html">#tech</a></p>
+                        <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
+                    </div>
+                    <div class="card_text">
+                        <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">wpのテーマ作ってみた</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p class="card_tag"><a href="tags.html">#tech</a></p>
-                <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
-                <div class="card_text">
-                    <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">MacBook買ってみた</a></h3>
-                    <p class="card_article_text">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                <div class="card">
+                    <p class="card_tag"><a href="tags.html">#tech</a></p>
+                    <img src="src/NO IMAGE.jpg" alt="NO IMAGE" class="article-img">
+                    <div class="card_text">
+                        <h3 class="card_article_title"><a href="/single.html" target="_blank" rel="noopener noreferrer">wpのテーマ作ってみた</a></h3>
+                    </div>
                 </div>
             </div>
         </main>
@@ -86,12 +106,6 @@
         <aside>
             <div class="side-card text-center">
                 <p class="textarea">広告広告</p>
-            </div>
-            <div class="side-card">
-                <h3 class="table-contents-title">目次</h3>
-                <ol class="table-contents">
-                    <li>あああ</li>
-                </ol>
             </div>
             <div class="side-card text-center stycky">
                 <img src="src/icon.jpg" alt="icon" class="icon">    
@@ -134,7 +148,7 @@
         </div>
     </footer>
     <!-- footer end -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!-- JS File -->
+    <script src="js/index.js"></script>
+   </body>
 </html>

@@ -7,9 +7,10 @@ COMMON
     --background:#d8eefe;
     --main-background:rgb(27, 115, 165);
     --paragraph:#5f6c7b;
-    --button:#3da9fc;
+    --button:rgb(27, 115, 165);
     --button-text:#fffffe;
     --text-color:#fffffe;
+    --accent-color:rgb(252, 140, 138);
 }
 
 html{
@@ -22,8 +23,12 @@ h1{
     font-size: 3rem;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 h3{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 p {
@@ -32,6 +37,46 @@ p {
 
 li{
     font-size: 1.3rem;
+}
+
+i{
+    cursor: pointer;
+}
+
+.shere-btn{
+    font-size: 35px;
+    color: var(--button);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50vh;
+    left: 10px;
+}
+
+.shere-btn i{
+    padding: .5rem 0;
+}
+
+.copy-btn{
+    position: relative;
+}
+
+.copy-btn::after {
+    position: absolute;
+    content: 'URL copied!';
+    font-family: 'Silkscreen', cursive;
+    font-size: .5em;
+    color: var(--text-color);
+    background: #333;
+    border-radius: 3px;
+    padding: 5px;
+    left: 35px;
+    transition: .4s;
+    opacity: 0;
+}
+  
+.copied::after {
+    opacity: 1;
 }
 
 .url::after{
@@ -48,6 +93,11 @@ li{
     font-weight: 900;
     font-size: 13px;
     padding-left: 3px;
+}
+
+.tag{
+    font-family: 'Silkscreen', cursive;
+    font-size: 130%;
 }
 
 body{
@@ -90,7 +140,6 @@ header {
     color: var(--text-color);
     font-family: 'Silkscreen', cursive;
     background-color:var(--main-background);
-    /* margin-bottom: 3rem; */
     margin-bottom: 40px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -108,6 +157,7 @@ header {
 .navbar ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /*
@@ -115,18 +165,94 @@ MAIN
 ================================================ */
 main{
     background-color:var(--main-background);
-    width: 65%;
+    width: 55%;
     height: 100%;
     padding: 1rem;
     border-radius: 20px;
 }
 
-/* SIDE CARD */
+.article_list{
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+/*
+POST CARD
+================================================ */
+.card_tag{
+    font-family: 'Silkscreen', cursive;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: rgba(80, 80, 80, 0.5);
+    transform: rotate(-4deg);
+}
+
+.card{
+    /* display: flex;
+    flex-direction: column; */
+    /* margin: 1rem  3rem; */
+    margin: 1rem;
+    /* height: calc(65vw/3/100*68); */
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    align-items: center;
+    width: calc(90%/2);
+}
+
+.card-img{
+    margin: 0 auto;
+}
+
+.article-img{
+    /* height: calc(65vw/3/100*54); */
+    /* width: calc(65vw/3/100*96); */
+    width: 100%;
+}
+
+.card_text{
+    /* width: 65%; */
+    overflow-wrap: break-word;
+    /* margin: 1.8rem auto; */
+}
+
+.card_article_title{
+    margin: 0 auto;
+    width: 90%;
+    vertical-align: middle;
+    padding-top: 1rem;
+    /* text-align: center; */
+    /* 溢れたタイトルを...表示 */
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;  */
+}
+
+.card_article_text{
+    padding: 1em;
+    line-height: 2.5em;
+    letter-spacing: 2px;
+    height: 6em;
+    width: 90%;
+    margin:0 auto;
+    /* 溢れたタイトルを...表示 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
+
+/*
+ASIDE
+================================================ */
 .side-card{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    width: 17vw;
+    width: 15vw;
     background-color: #fffffe;
     border-radius: 20px;
     padding: 2rem 1rem;
@@ -168,10 +294,6 @@ main{
     padding-left: 2rem;
 }
 
-
-/*
-ASIDE
-================================================ */
 aside{
     width: 20%;
 }

@@ -1,12 +1,10 @@
 .breadcrumb{
-    background-color: rgba(95, 108, 123,0.8);
     color: var(--text-color);
     font-family: 'Silkscreen', cursive;
 }
 
 .breadcrumb ol{
     margin: 0 auto;
-    max-width: 85%;
     display: flex;
     margin-bottom: 1rem;
 }
@@ -24,4 +22,88 @@
     border-radius: 20px;
     background-color: var(--text-color);
     color: var(--paragrah);
+    padding: 1rem 3rem 3rem;
 }
+
+.post-img{
+    position: relative;
+    margin: 2rem;
+}
+
+.post-img img{
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.post-img-tag{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    padding: 15px 30px;
+    background-color: rgba(80, 80, 80, 0.5);
+    transform: rotate(-4deg);
+}
+
+.article-data ul{
+    display: flex;
+    align-items: flex-end;
+}
+
+.article-data li{
+    padding-left: 30px;
+}
+
+.article-title{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.table-of-content{
+    padding: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    border: var(--accent-color) 10px solid;
+    margin-bottom: 3rem;
+}
+
+.table-of-content li{
+    padding: 1rem;
+}
+
+.table-of-content h3::before{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f0c9';
+    padding-right: 15px;
+}
+
+.table-of-content h3{
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+.headline {
+    position: relative;
+    padding-left: 1.2em;
+    line-height: 1.4;
+    padding-bottom: .5em;
+}
+  
+.headline:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    position: absolute;
+    font-size: 1em;
+    left: 0;
+    top: 0;
+    color: var(--accent-color);
+}
+
+.sentence{
+    line-height: 1.8;
+}
+
